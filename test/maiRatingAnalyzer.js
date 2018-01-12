@@ -1,0 +1,23 @@
+javascript:
+(
+	function(j,f)
+	{
+		j=['file:///C:/Users/Stanley%20Wong/Desktop/mai_inner_level.js',
+		   'file:///C:/Users/Stanley%20Wong/Desktop/mai_RatingAnalyzer/scripts/calc_rating.js',
+		   'file:///C:/Users/Stanley%20Wong/Desktop/mai_RatingAnalyzer/scripts/maiRatingAnalyzer_body.js'];
+		f=function(s,u)
+		{
+			if(j.length==0)
+			{
+				return;
+			}
+			u=j.shift()+'?'+Date.now();
+			s=document.createElement('script');
+			document.body.appendChild(s);
+			s.charset='UTF-8';
+			s.addEventListener('load',f);
+			s.src=u;
+		};
+		(document.readyState=='loading')?document.addEventListener('DOMContentLoaded',f):f();
+	}
+)();
