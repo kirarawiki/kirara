@@ -2,9 +2,9 @@ javascript:
 (
 	function(j,f)
 	{
-		j=['file:///C:/Users/Stanley%20Wong/Desktop/mai_inner_level.js',
-		   'file:///C:/Users/Stanley%20Wong/Desktop/mai_RatingAnalyzer/scripts/calc_rating.js',
-		   'file:///C:/Users/Stanley%20Wong/Desktop/mai_RatingAnalyzer/scripts/maiRatingAnalyzer_body.js'];
+		j=['https://raw.githubusercontent.com/kirarawiki/kirara/master/test/mai_inner_level.js',
+		   'https://raw.githubusercontent.com/kirarawiki/kirara/master/test/mai_RatingAnalyzer/scripts/calc_rating.js',
+		   'https://raw.githubusercontent.com/kirarawiki/kirara/master/test/mai_RatingAnalyzer/scripts/maiRatingAnalyzer_body.js'];
 		f=function(s,u)
 		{
 			if(j.length==0)
